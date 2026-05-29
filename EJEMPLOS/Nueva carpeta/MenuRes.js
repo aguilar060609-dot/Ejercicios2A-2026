@@ -23,7 +23,7 @@ class Restaurante {
         });
     }
 
-    registrarVenta() {
+    regVen() {
         let pidiendo = true;
         this.mostrarMenu();
 
@@ -68,7 +68,6 @@ class Restaurante {
                     }
                     break;
             }
-            console.log("-----------------------------------------");
         }
 
         this.mostrarTicket();
@@ -115,10 +114,10 @@ while (sistemaActivo) {
         case 3:
         case 4:
         case 5:
-            mesas[seleccion].registrarVenta();
+            mesas[seleccion].regVen();
             break;
         default:
-            console.log("Esa mesa no existe. Intente de nuevo.\n");
+            console.log("Esa mesa no existe.\n");
             break;
     }
 }

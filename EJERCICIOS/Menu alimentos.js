@@ -23,7 +23,8 @@ constructor(Mesa,cantidad) {
 }
 mesa () {
     console.log(`\nMesas disponibles: 1, 2, 3, 4, 5`);
-    let opcion = parseInt(prompt("Seleccione una mesa: "));
+    let opcion = parseInt(prompt(" Seleccione una mesa por favor: "));
+    this.Mesa = opcion;
 
 switch (opcion) {
     case 1:
@@ -59,7 +60,7 @@ mosMenu() {
 
 carta() {
     while (true) {
-        const opcion = parseInt(prompt(`[Mesa ${this.Mesa}] Seleccione el producto (0 para cerrar cuenta): `));
+        const opcion = parseInt(prompt(`\nSu mesa es: ${this.Mesa},\nSi quieres cerrar cuenta presiona 0,\nSi quieres pedir algo mas selecciona el numero del producto: `));
         switch (opcion) {
             case 0:
                 console.log(`Cuenta cerrada. Total a pagar: $${this.TotalCuenta()}`);

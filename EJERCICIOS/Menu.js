@@ -1,5 +1,6 @@
 import promptSync from "prompt-sync";
-import { Alimento } from "./Alimentos.js"; 
+//import { Alimento } from "./Alimentos.js"; 
+const {Alimento}=require("./Alimentos.js")
 
 const prompt = promptSync();
 
@@ -56,10 +57,10 @@ do {
             break;
 
         case 3:
-            console.log("\nFin de la ejecución. ¡Buen provecho!");
+            console.log("\n ¡Buen provecho! ");
             break;
             
         default:
-            console.log("\nOpción no válida.");
+            console.log("\n Vuelve a intentar .");
     }
 } while (opcion !== 3);
